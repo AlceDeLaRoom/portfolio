@@ -1,0 +1,26 @@
+[
+    {"id":"1",
+    "name":"HTML",
+    "level":"90"
+    },
+    {"id":"2",
+    "name":"CSS",
+    "level":"85"
+    },
+    {"id":"3", 
+    "name":"JavaScript",
+    "level":"95"
+    },
+    {"id":"4",
+    "name":"React",
+    "level":"80"
+    },
+    {"id":"5",
+    "name":"Node.js",
+    "level":"65"
+    },
+    {"id":"6",
+    "name":"MongoDB",
+    "level":"85"
+    }
+]
