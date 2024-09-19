@@ -8,7 +8,7 @@ function App() {
     return (
         <Router>
             <Routes>
-                <Route path="/" element={<Main />} />
+                <Route path="/portfolio" element={<Main />} />
                 <Route path="*" element={<Error404 />} />
             </Routes>
         </Router>

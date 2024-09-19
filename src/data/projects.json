@@ -5,7 +5,7 @@
         "tag": ["Html", "Css"],
         "description": "This is a project",
         "problematique": "This is a problem and how i fix it",
-        "image": "asset/img/booki.jpg",
+        "image": "assets/booki.jpg",
         "urlGit": "https://github.com/AlceDeLaRoom/OPC_DebWeb_P2_Booki_AD",
         "urlDemo": "https://alcedelaroom.github.io/OPC_DebWeb_P2_Booki_AD"
     },
@@ -15,7 +15,7 @@
         "tag": ["SEO", "Accessibilité", "Débug"],
         "description": "This is a project",
         "problematique": "This is a problem and how i fix it",
-        "image": "asset/img/none.jpg",
+        "image": "assets/none.jpg",
         "urlGit": "https://github.com/AlceDeLaRoom/OPC_DevWeb_P4_DebugSeo_AD",
         "urlDemo": "https://alcedelaroom.github.io/OPC_DevWeb_P4_DebugSeo_AD"
     },
@@ -25,7 +25,7 @@
         "tag": ["React.js", "Sass"],
         "description": "This is a project",
         "problematique": "This is a problem and how i fix it",
-        "image": "asset/img/kasa.jpg",
+        "image": "assets/kasa.jpg",
         "urlGit": "https://github.com/AlceDeLaRoom/OPC_DebWeb_P5_Kasa_AD",
         "urlDemo": ""
     },
@@ -35,7 +35,7 @@
         "tag": ["NodeJS", "Express", "MongoDB"],
         "description": "This is a project",
         "problematique": "This is a problem and how i fix it",
-        "image": "asset/img/none.jpg",
+        "image": "assets/none.jpg",
         "urlGit": "https://github.com/AlceDeLaRoom/OPC_DevWeb_P6_VieuxGrimmoire-Back_AD",
         "urlDemo": ""
     },
@@ -45,7 +45,7 @@
         "tag": ["React", "TailwindCss"],
         "description": "This is a project",
         "problematique": "This is a problem and how i fix it",
-        "image": "asset/img/none.jpg",
+        "image": "assets/none.jpg",
         "urlGit": "",
         "urlDemo": ""
     },
@@ -55,7 +55,7 @@
         "tag": ["Javascript", "Css"],
         "description": "This is a project",
         "problematique": "This is a problem and how i fix it",
-        "image": "asset/img/BricABrac.jpg",
+        "image": "assets/BricABrac.jpg",
         "urlGit": "https://github.com/AlceDeLaRoom/CasseBricABrac",
         "urlDemo": "https://alcedelaroom.github.io/CasseBricABrac"
     },
@@ -65,7 +65,7 @@
         "tag": ["Javascript", "Css"],
         "description": "This is a project",
         "problematique": "This is a problem and how i fix it",
-        "image": "asset/img/BricABrac.jpg",
+        "image": "assets/BricABrac.jpg",
         "urlGit": "https://github.com/AlceDeLaRoom/CasseBricABrac",
         "urlDemo": "https://alcedelaroom.github.io/CasseBricABrac"
     }

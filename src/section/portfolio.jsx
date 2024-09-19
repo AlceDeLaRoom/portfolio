@@ -10,6 +10,7 @@ function Portfolio() {
     const [showModal, setShowModal] = useState(false);
     const [updateModal, setUpdateModal] = useState(0);
 
+
     const handleModal = (id) => {
         setShowModal(true);
         setUpdateModal(id-1);
@@ -36,17 +37,7 @@ function Portfolio() {
 
     const arrowSize = 100;
 
-    function slide() {
-        return (
-            <div className='flex justify-center'>
-                {projects.slice(activeCard, activeCard + 3).map((project) => (
-                <button onClick={() => handleModal(project.id)} key={project.id}>
-                    <PortfolioItem  name={project.name} image={project.image} />
-                </button>
-                ))}
-            </div>
-        )
-    }
+
 
     return (
         <div id="portfolio" className='text-white text-center py-12 mb-24'>
@@ -64,14 +55,13 @@ function Portfolio() {
             <div id="slidePortfolio" className='m-auto flex justify-between items-center 
                                                 bg-gradient-to-r from-transparent via-indigo-700 to-*'>
                 <button onClick={handlePrevious} className='transition duration-200 opacity-80
-
-                                    hover:opacity-100 text-8xl font-bold text-gray-300'> 
+                                    hover:opacity-100 text-8xl font-bold text-gray-300' aria-hidden="true" > 
                     <ArrowBackIosIcon sx={{ fontSize: arrowSize }}></ArrowBackIosIcon>
                 </button>
                 
                 <div className='flex justify-center'>
                     {projects.slice(activeCard, activeCard + 3).map((project) => (
-                        <button onClick={() => handleModal(project.id)} key={project.id}>
+                        <button onClick={() => handleModal(project.id)} key={project.id} aria-hidden="true" >
                             <PortfolioItem  name={project.name} image={project.image} />
                         </button>
                     ))}
@@ -86,7 +76,7 @@ function Portfolio() {
             <div id="boutonPortfolio"  className='flex justify-center mt-4 py-5'>
                 {projects.map((project, index) => (
                     (project.id - 1) % 3 === 0 && 
-                    <button key={project.id} onClick={() => handleDot(index)} 
+                    <button key={project.id} onClick={() => handleDot(index)} aria-hidden="true" 
                         className={`size-4 rounded-full mx-2 
                             ${activeDot === index ? 
                                 'bg-teal-100 shadow-inner shadow-slate-100 cursor-default' : 
