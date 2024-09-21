@@ -3,7 +3,7 @@ import picture from '../assets/portrait.jpg';
 function Home() {
     return (
       <div id='home' className='flex flex-wrap text-white font-mono pt-24'>
-        <div className='w-96 h-96 mb-12 m-auto rounded-full bg-gradient-to-b from-transparent to-purple-900 p-0.5'>
+        <div className='lg:w-96 lg:h-96 w-80 h-80 mb-12 m-auto rounded-full bg-gradient-to-b from-transparent to-purple-900 p-0.5'>
           <img src={picture} alt="Décombe Alice, web developer" className='rounded-full size-[99%] ml-0.5 mt-0.5'/>
         </div>
         <div className='text-center m-auto'>

@@ -9,8 +9,8 @@ function Skill(params) {
     return (
         
     
-        <div className="flex items-center justify-between max-w-md pr-5 
-                        text-teal-200 bg-gradient-to-r from-indigo-600 via-indigo-600 to-transparent
+        <div className="flex items-center max-w-md pr-5 
+                        text-teal-100 bg-gradient-to-r from-indigo-600 via-indigo-600 to-transparent
                         shadow-xl rounded-s-full rounded-r-3xl h-20 w-64 mx-4 my-8">
             <div className="flex items-center justify-center -m-6 overflow-hidden 
                             bg-inherit rounded-full">
@@ -25,7 +25,7 @@ function Skill(params) {
                         cy="60"
                         />
                     <circle
-                        className="text-teal-100"
+                        className="text-teal-300"
                         strokeWidth={strokeWidth}
                         strokeDasharray={circumference}
                         strokeDashoffset={circumference - params.level * circumference/100}
@@ -40,9 +40,8 @@ function Skill(params) {
                 </svg>
                 <span className="absolute text-2xl">{params.level}%</span>
             </div>
+            <img src={params.logo} alt={params.name} className="w-8 h-8"/>
             <p className="ml-2 font-bold sm:text-xl">{params.name}</p>
-
-            <span className="ml-auto text-xl font-medium sm:block">{params.level}%</span>
         </div>
 
         

@@ -4,6 +4,7 @@ import Modal from '../components/modal';
 import projects from '../data/projects.json';
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
+
 function Portfolio() {
     const [activeCard, updateActiveCard] = useState(0);
     const [activeDot, updateActiveDot] = useState(0);
@@ -34,8 +35,6 @@ function Portfolio() {
     const handleChildData = (data) => {
         setShowModal(data);
     };
-
-    const arrowSize = 100;
 
     function Slides() {
         if (activeCard+3 > projects.length) 
@@ -70,19 +69,16 @@ function Portfolio() {
             <h2 className='my-32 text-5xl font-bold uppercase text-teal-100'>Portfolio</h2>
 
             <div id="slidePortfolio" className='m-auto flex justify-around h-max-52
+                                                font-bold text-gray-300
                                                 bg-gradient-to-r from-transparent via-indigo-700 to-*'>
-                <button onClick={handlePrevious} className='transition duration-200 opacity-80
-                                    hover:opacity-100 text-8xl font-bold text-gray-300'> 
-                    <ArrowBackIosIcon sx={{ fontSize: arrowSize }}></ArrowBackIosIcon>
+                <button onClick={handlePrevious} className='transition duration-200 opacity-80 hover:opacity-100 '> 
+                    <ArrowBackIosIcon className='lg:text-8xl text-6xl'/>
                 </button>
-                
                 
                 <Slides/>
                 
-                
-                <button onClick={handleNext} className='transition duration-200 opacity-80 
-                                    hover:opacity-100 text-8xl font-bold text-gray-300'>
-                    <ArrowForwardIosIcon sx={{ fontSize: arrowSize }}></ArrowForwardIosIcon>
+                <button onClick={handleNext} className='transition duration-200 opacity-80 hover:opacity-100'>
+                    <ArrowForwardIosIcon className='lg:text-8xl text-6xl'/>
                 </button>
             </div>
 
