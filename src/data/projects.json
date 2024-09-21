@@ -55,7 +55,7 @@
         "tag": ["Javascript", "Css"],
         "description": "This is a project",
         "problematique": "This is a problem and how i fix it",
-        "image": "assets/BricABrac.jpg",
+        "image": "assets/bricABrac.jpg",
         "urlGit": "https://github.com/AlceDeLaRoom/CasseBricABrac",
         "urlDemo": "https://alcedelaroom.github.io/CasseBricABrac"
     },
@@ -65,7 +65,7 @@
         "tag": ["Javascript", "Css"],
         "description": "This is a project",
         "problematique": "This is a problem and how i fix it",
-        "image": "assets/BricABrac.jpg",
+        "image": "assets/bricABrac.jpg",
         "urlGit": "https://github.com/AlceDeLaRoom/CasseBricABrac",
         "urlDemo": "https://alcedelaroom.github.io/CasseBricABrac"
     }

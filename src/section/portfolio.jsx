@@ -37,7 +37,24 @@ function Portfolio() {
 
     const arrowSize = 100;
 
-
+    function Slides() {
+        if (activeCard+3 > projects.length) 
+        {
+            return(projects.slice(- 3).map((project) => (
+                <button onClick={() => handleModal(project.id)} key={project.id} 
+                    className='aspect-video'>
+                    <PortfolioItem  name={project.name} image={project.image} />
+                </button>)
+        ))
+        } else {
+            return (projects.slice(activeCard, activeCard + 3).map((project) => (
+                <button onClick={() => handleModal(project.id)} key={project.id} 
+                    className='aspect-video'>
+                    <PortfolioItem  name={project.name} image={project.image} />
+                </button>)
+            ))
+        }
+    }
 
     return (
         <div id="portfolio" className='text-white text-center py-12 mb-24'>
@@ -52,20 +69,16 @@ function Portfolio() {
 
             <h2 className='my-32 text-5xl font-bold uppercase text-teal-100'>Portfolio</h2>
 
-            <div id="slidePortfolio" className='m-auto flex justify-between items-center 
+            <div id="slidePortfolio" className='m-auto flex justify-around h-max-52
                                                 bg-gradient-to-r from-transparent via-indigo-700 to-*'>
                 <button onClick={handlePrevious} className='transition duration-200 opacity-80
-                                    hover:opacity-100 text-8xl font-bold text-gray-300' aria-hidden="true" > 
+                                    hover:opacity-100 text-8xl font-bold text-gray-300'> 
                     <ArrowBackIosIcon sx={{ fontSize: arrowSize }}></ArrowBackIosIcon>
                 </button>
                 
-                <div className='flex justify-center'>
-                    {projects.slice(activeCard, activeCard + 3).map((project) => (
-                        <button onClick={() => handleModal(project.id)} key={project.id} aria-hidden="true" >
-                            <PortfolioItem  name={project.name} image={project.image} />
-                        </button>
-                    ))}
-                </div>
+                
+                <Slides/>
+                
                 
                 <button onClick={handleNext} className='transition duration-200 opacity-80 
                                     hover:opacity-100 text-8xl font-bold text-gray-300'>
