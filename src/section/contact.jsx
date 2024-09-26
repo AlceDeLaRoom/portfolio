@@ -26,7 +26,7 @@ function Contact() {
     }
 
   return (
-    <div id='contact' className="flex items-center py-12">  
+    <div id='contact' className="flex items-center h-w mt-24">  
         <div className="container mx-auto max-w-md mb-12">  
             <div className="text-center">
             <h2 className="my-6 text-5xl font-bold uppercase text-teal-100">

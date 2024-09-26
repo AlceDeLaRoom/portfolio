@@ -13,21 +13,10 @@ function NavigationLink({url, icon, text}) {
             <div className="sm:mb-1.5 sm:mx-2 mx-auto mb-1 block sm:hidden lg:block">
                 {icon}
             </div>
-            <p className=" my-2 hidden sm:block lg:text-lg text-sm "
-                >{text}</p>
+            <h4 className=" my-2 hidden sm:block lg:text-lg text-sm "
+                >{text}</h4>
         </a>
     )
 }
 
 export default NavigationLink
-/*
-<a href={url}
-            className="flex items-center
-                        my-2 text-center 
-                        font-bold text-lg rounded cursor-pointer lg:w-full sm:w-2/12 h-fit w-10
-                        bg bg-gradient-to-r from-purple-950 via-purple-800  to-purple-950 
-                        text-teal-100 transform
-                        hover:via-indigo-700 hover:text-teal-200">
-            <div className="sm:mb-2 sm:mx-2 mx-auto mb-1 block sm:hidden lg:block">
-                {icon}
-            </div>*/

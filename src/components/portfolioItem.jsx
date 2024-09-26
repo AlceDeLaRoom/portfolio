@@ -1,7 +1,8 @@
 
 function PortfolioItem(params) {
     return (
-        <div className='relative opacity-70 transition
+        <div className='relative transition
+                        sm:opacity-70
                         hover:opacity-100 hover:scale-110
                         z-0 hover:z-10' >
             <img src={params.image} alt={params.name} className='object-cover rounded-lg'/>

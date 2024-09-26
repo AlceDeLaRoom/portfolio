@@ -4,13 +4,11 @@ import SkillsData from '../data/skills.json';
 
 function Skills() {
     return (
-        <div id="skills" className='text-center py-12 w-full'>
-            <div className="skill-items flex flex-wrap justify-around m-auto">
-                {SkillsData.map((skill) => (
-                    <SkillItem key={skill.id} name={skill.name} level={skill.level} logo={skill.logo} />
-                    ))    
-                }
-            </div>   
+        <div id="skills" className='text-center skill-items flex flex-wrap justify-around m-auto pt-24'>            
+            {SkillsData.map((skill) => (
+                <SkillItem key={skill.id} name={skill.name} level={skill.level} logo={skill.logo} />
+                ))    
+            } 
         </div>
     );
 }

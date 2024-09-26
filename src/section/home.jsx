@@ -8,7 +8,7 @@ function Home() {
         </div>
         <div className='text-center m-auto'>
           <h1 className='text-6xl font-bold uppercase mb-8'>Décombe Alice</h1>
-          <h3 className='text-4xl font-semibold text-teal-200'>Web Developer_</h3>
+          <h2 className='text-4xl font-semibold text-teal-200'>Web Developer_</h2>
         </div>
     </div>
   );

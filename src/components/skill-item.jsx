@@ -11,7 +11,7 @@ function Skill(params) {
     
         <div className="flex items-center max-w-md pr-5 
                         text-teal-100 bg-gradient-to-r from-indigo-600 via-indigo-600 to-transparent
-                        shadow-xl rounded-s-full rounded-r-3xl h-20 w-64 mx-4 my-8">
+                        shadow-xl rounded-s-full rounded-r-3xl h-20 w-64 mx-4 my-3">
             <div className="flex items-center justify-center -m-6 overflow-hidden 
                             bg-inherit rounded-full">
                 <svg className="w-32 h-32 transform translate-x-1 translate-y-1">
@@ -40,8 +40,8 @@ function Skill(params) {
                 </svg>
                 <span className="absolute text-2xl">{params.level}%</span>
             </div>
-            <img src={params.logo} alt={params.name} className="w-8 h-8"/>
-            <p className="ml-2 font-bold sm:text-xl">{params.name}</p>
+            <img src={params.logo} alt={params.name} className="w-12 h-12"/>
+            <h3 className="ml-2 font-bold sm:text-xl">{params.name}</h3>
         </div>
 
         

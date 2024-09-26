@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import PortfolioItem from '../components/portfolioItem';
+import SlideButtons from '../components/slideButtons';
 import Modal from '../components/modal';
 import projects from '../data/projects.json';
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
@@ -36,27 +36,26 @@ function Portfolio() {
         setShowModal(data);
     };
 
+
+
     function Slides() {
         if (activeCard+3 > projects.length) 
         {
             return(projects.slice(- 3).map((project) => (
-                <button onClick={() => handleModal(project.id)} key={project.id} 
-                    className='aspect-video'>
-                    <PortfolioItem  name={project.name} image={project.image} />
-                </button>)
-        ))
+                <SlideButtons key={project.id} project={project} handleModal={handleModal}/>)
+            )
+        )
         } else {
-            return (projects.slice(activeCard, activeCard + 3).map((project) => (
-                <button onClick={() => handleModal(project.id)} key={project.id} 
-                    className='aspect-video'>
-                    <PortfolioItem  name={project.name} image={project.image} />
-                </button>)
-            ))
+            return (
+                projects.slice(activeCard, activeCard + 3).map((project) => (
+                    <SlideButtons key={project.id} project={project} handleModal={handleModal}/>)
+                )
+            )
         }
     }
 
     return (
-        <div id="portfolio" className='text-white text-center py-12 mb-24'>
+        <div id="portfolio" className='text-white text-center pt-24'>
             <div className={showModal? "block": "hidden"} >
                 <div className="relative z-10" aria-labelledby="modal-title" role="dialog" aria-modal="true" >
                 <div className="fixed inset-0 bg-black bg-opacity-50 transition-opacity" 
@@ -66,26 +65,32 @@ function Portfolio() {
                 </div>
             </div> 
 
-            <h2 className='my-32 text-5xl font-bold uppercase text-teal-100'>Portfolio</h2>
+            <h2 className='mt-12 mb-16 text-5xl font-bold uppercase text-teal-100'>Portfolio</h2>
 
             <div id="slidePortfolio" className='m-auto flex justify-around h-max-52
                                                 font-bold text-gray-300
                                                 bg-gradient-to-r from-transparent via-indigo-700 to-*'>
-                <button onClick={handlePrevious} className='transition duration-200 opacity-80 hover:opacity-100 '> 
-                    <ArrowBackIosIcon className='lg:text-8xl text-6xl'/>
-                </button>
                 
-                <Slides/>
+                <button onClick={handlePrevious} 
+                        className='transition duration-200 opacity-80 hover:opacity-100 
+                                    sm:px-4'> 
+                    <ArrowBackIosIcon className='lg:text-8xl sm:text-6xl text-8xl lg:-mr-10 sm:-mr-8 -mr-6'/>
+                </button>
+
+                <div className='flex sm:flex-row flex-col'>
+                    <Slides/>    
+                </div>
                 
                 <button onClick={handleNext} className='transition duration-200 opacity-80 hover:opacity-100'>
-                    <ArrowForwardIosIcon className='lg:text-8xl text-6xl'/>
+                    <ArrowForwardIosIcon className='lg:text-8xl sm:text-6xl text-8xl sm:mr-0 -mr-6'/>
                 </button>
+                
             </div>
 
-            <div id="boutonPortfolio"  className='flex justify-center mt-4 py-5'>
+            <div id="boutonPortfolio"  className='justify-center mt-4 py-5 sm:flex hidden'>
                 {projects.map((project, index) => (
                     (project.id - 1) % 3 === 0 && 
-                    <button key={project.id} onClick={() => handleDot(index)} aria-hidden="true" 
+                    <button aria-label="other projects" key={project.id} onClick={() => handleDot(index)} aria-hidden="true"
                         className={`size-4 rounded-full mx-2 
                             ${activeDot === index ? 
                                 'bg-teal-100 shadow-inner shadow-slate-100 cursor-default' : 
@@ -101,3 +106,14 @@ function Portfolio() {
 
 export default Portfolio;
 
+/*
+<button onClick={handlePrevious} className='transition duration-200 opacity-80 hover:opacity-100 '> 
+                    <ArrowBackIosIcon className='lg:text-8xl text-6xl'/>
+                </button>
+
+
+<button onClick={handleNext} className='transition duration-200 opacity-80 hover:opacity-100'>
+                    <ArrowForwardIosIcon className='lg:text-8xl text-6xl'/>
+                </button>
+
+*/
