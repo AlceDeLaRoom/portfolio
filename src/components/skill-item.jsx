@@ -40,7 +40,7 @@ function Skill(params) {
                 </svg>
                 <span className="absolute text-2xl">{params.level}%</span>
             </div>
-            <img src={params.logo} alt={params.name} className="w-12 h-12"/>
+            <img src={params.logo} alt={"logo" + params.name} className="w-12 h-12"/>
             <h3 className="ml-2 font-bold sm:text-xl">{params.name}</h3>
         </div>
 

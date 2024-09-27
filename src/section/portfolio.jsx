@@ -68,7 +68,7 @@ function Portfolio() {
                                                 font-bold text-gray-300
                                                 bg-gradient-to-r from-transparent via-indigo-700 to-*'>
                 
-                <button onClick={handlePrevious} 
+                <button aria-label="previous projects" onClick={handlePrevious} 
                         className='transition duration-200 opacity-80 hover:opacity-100 
                                     sm:px-4'> 
                     <ArrowBackIosIcon className='lg:text-8xl sm:text-6xl text-8xl lg:-mr-10 sm:-mr-8 -mr-6'/>
@@ -78,7 +78,8 @@ function Portfolio() {
                     <Slides/>    
                 </div>
                 
-                <button onClick={handleNext} className='transition duration-200 opacity-80 hover:opacity-100'>
+                <button aria-label="next projects" onClick={handleNext} 
+                        className='transition duration-200 opacity-80 hover:opacity-100'>
                     <ArrowForwardIosIcon className='lg:text-8xl sm:text-6xl text-8xl sm:mr-0 -mr-6'/>
                 </button>
                 
