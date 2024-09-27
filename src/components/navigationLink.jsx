@@ -9,7 +9,7 @@ function NavigationLink({url, icon, text}) {
                         font-bold text-lg rounded cursor-pointer lg:w-full sm:w-2/12 h-fit w-10
                         bg bg-gradient-to-r from-transparent via-purple-600 lg:via-20%  to-transparent 
                         text-teal-100 transform
-                        hover:via-indigo-200 hover:text-purple-900">
+                        hover:via-indigo-500 ">
             <div className="sm:mb-1.5 sm:mx-2 mx-auto mb-1 block sm:hidden lg:block">
                 {icon}
             </div>

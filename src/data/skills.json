@@ -28,5 +28,15 @@
     "name":"MongoDB",
     "level":"85",
     "logo":"asset/logo/mongo-db.svg"
+    },
+    {"id":"7",
+    "name":"SEO",
+    "level":"70",
+    "logo":"asset/logo/SEO.svg"
+    },
+    {"id":"8",
+    "name":"Accessibilité",
+    "level":"90",
+    "logo":"asset/logo/access.svg"
     }
 ]

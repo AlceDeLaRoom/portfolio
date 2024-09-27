@@ -3,8 +3,8 @@
         "id": 1,
         "name": "Booki",
         "tag": ["Html", "Css"],
-        "description": "This is a project",
-        "problematique": "This is a problem and how i fix it",
+        "description": "Premier projet dans le cadre de la formation de Développeur Web d'OpenClassrooms. L'objectif était d'installer un environnement front-end et de réaliser une page web en HTML et CSS responsive.",
+        "problematique": "Ce projet a été l'occasion de redécouvrir les bases du HTML et du CSS. Et de découvrir comment réaliser une page web responsive. j'ai également découvert Visual Studio Code, et comment versionner mon projet directement via cet éditeur.",
         "image": "asset/screen/booki.jpg",
         "urlGit": "https://github.com/AlceDeLaRoom/OPC_DebWeb_P2_Booki_AD",
         "urlDemo": "https://alcedelaroom.github.io/OPC_DebWeb_P2_Booki_AD"
@@ -13,9 +13,9 @@
         "id": 2,
         "name": "Nina Carducci",
         "tag": ["SEO", "Accessibilité", "Débug"],
-        "description": "This is a project",
-        "problematique": "This is a problem and how i fix it",
-        "image": "asset/screen/none.jpg",
+        "description": "Projet réalisé dans le cadre de la formation Développeur Web d'OpenClassrooms. L'objectif était de débugger un site web existant, d'améliorer son référencement et son accessibilité.",
+        "problematique": "Ce projet a été l'occasion de découvrir les bases du SEO et de surtout l'accessibilité puisque je suis moi-même concernée par cette problématique. J'ai également découvert les outils de débugging de Chrome et comment les utiliser pour corriger les erreurs d'un site web.",
+        "image": "asset/screen/nina.jpg",
         "urlGit": "https://github.com/AlceDeLaRoom/OPC_DevWeb_P4_DebugSeo_AD",
         "urlDemo": "https://alcedelaroom.github.io/OPC_DevWeb_P4_DebugSeo_AD"
     },
@@ -23,51 +23,51 @@
         "id": 3,
         "name": "Kasa",
         "tag": ["React.js", "Sass"],
-        "description": "This is a project",
-        "problematique": "This is a problem and how i fix it",
+        "description": "Projet réalisé dans le cadre de la formation Développeur Web d'OpenClassrooms. L'objectif était de réaliser un site de location de logements en React.js.",
+        "problematique": "Ce projet a été l'occasion de découvrir React.js. J'ai également pu redécouvrir Sass et comment l'utiliser avec React.js.",
         "image": "asset/screen/kasa.jpg",
         "urlGit": "https://github.com/AlceDeLaRoom/OPC_DebWeb_P5_Kasa_AD",
-        "urlDemo": ""
+        "urlDemo": "https://kasa-react-alcedelarooms-projects.vercel.app/"
     },
     {
         "id": 4,
         "name": "Vieux Grimmoire",
         "tag": ["NodeJS", "Express", "MongoDB"],
-        "description": "This is a project",
-        "problematique": "This is a problem and how i fix it",
-        "image": "asset/screen/none.jpg",
+        "description": "Projet réalisé dans le cadre de la formation Développeur Web d'OpenClassrooms. L'objectif était de réaliser le back-end d'un site de vente de livres à l'aide de Node.js via le framework Express et l'utilisation de Mongo.db en tant que base de donnée.",
+        "problematique": "Ayant déjà des connaissance en Django, j'ai pu facilement comprendre le fonctionnement de Node.js et Express. J'ai également découvert MongoDB.",
+        "image": "asset/screen/grimoire.jpg",
         "urlGit": "https://github.com/AlceDeLaRoom/OPC_DevWeb_P6_VieuxGrimmoire-Back_AD",
-        "urlDemo": ""
+        "urlDemo": "https://p6-dev-web-livres-main-front.vercel.app/"
     },
     {
         "id": 5,
         "name": "Portfolio",
         "tag": ["React", "TailwindCss"],
-        "description": "This is a project",
-        "problematique": "This is a problem and how i fix it",
-        "image": "asset/screen/none.jpg",
-        "urlGit": "",
-        "urlDemo": ""
+        "description": "Dernier projet réalisé dans le cadre de la formation Développeur Web d'OpenClassrooms. L'objectif était de réaliser un portfolio avec la technologie que je souhaitais sous les conseils de mon mentor. Il fallait également mettre ne ligne le site",
+        "problematique": "Ce projet a été le plus compliqué à réaliser pour moi lors de ma formation. J'ai eu beaucoup de mal à crée un site à partir de rien, j'ai également eu des difficultéz à apprécier TailwindCss, préfèrant largement l'utilisation de Sass. Mais j'ai réussi à surmonter cette épreuve et je suis fière du résultat.",
+        "image": "asset/screen/portfolio.jpg",
+        "urlGit": "https://github.com/AlceDeLaRoom/portfolio",
+        "urlDemo": "https://portfolio-alcedelarooms-projects.vercel.app/portfolio"
     },
     {
         "id": 6,
         "name": "Casse-Bric à Brac",
         "tag": ["Javascript", "Css"],
-        "description": "This is a project",
-        "problematique": "This is a problem and how i fix it",
+        "description": "Projet personnel réalisé en Javascript. L'objectif était de réaliser un jeu de casse-briques en 24H.",
+        "problematique": "Ce projet a été important, il m'a permis d'appliquer mes connaissances fraichement aquises. Il m'a également mise en confiance, c'est grace à lui que je me suis sentie prête à me lancer dans la formation de Développeur Web d'OpenClassrooms.",
         "image": "asset/screen/bricABrac.jpg",
         "urlGit": "https://github.com/AlceDeLaRoom/CasseBricABrac",
-        "urlDemo": "https://alcedelaroom.github.io/CasseBricABrac"
+        "urlDemo": "https://AlceDeLaRoom.github.io/CasseBricABrac"
     },
     {
         "id": 7,
-        "name": "Random",
-        "tag": ["Javascript", "Css"],
-        "description": "This is a project",
-        "problematique": "This is a problem and how i fix it",
-        "image": "asset/screen/bricABrac.jpg",
-        "urlGit": "https://github.com/AlceDeLaRoom/CasseBricABrac",
-        "urlDemo": "https://alcedelaroom.github.io/CasseBricABrac"
+        "name": "Carousel",
+        "tag": ["Javascript", "TailwindCss"],
+        "description": "Ceci n'est pas un vrai projet, c'est juste pour tester le comportement du carousel quand il y a un nombre de projet non divisible par 3",
+        "problematique": "Le code du carousel était un mélange entre du code récupéré sur internet et du code généré par copilot, il a fallu que je comprenne la logique de ce code, que je l'adapte à mon projet pour qu'il fonctionne correctement.",
+        "image": "asset/screen/carousel.jpg",
+        "urlGit": "https://nocode-france.fr/",
+        "urlDemo": "https://www.dernierepage.com/"
     }
 
 ]

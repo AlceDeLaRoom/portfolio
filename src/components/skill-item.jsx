@@ -9,9 +9,9 @@ function Skill(params) {
     return (
         
     
-        <div className="flex items-center max-w-md pr-5 
+        <div className="flex items-center max-w-md pr-5 jus 
                         text-teal-100 bg-gradient-to-r from-indigo-600 via-indigo-600 to-transparent
-                        shadow-xl rounded-s-full rounded-r-3xl h-20 w-64 mx-4 my-3">
+                        shadow-xl rounded-s-full rounded-r-3xl h-20 w-72 mx-4 my-3">
             <div className="flex items-center justify-center -m-6 overflow-hidden 
                             bg-inherit rounded-full">
                 <svg className="w-32 h-32 transform translate-x-1 translate-y-1">

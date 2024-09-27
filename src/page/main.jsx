@@ -9,7 +9,7 @@ import Navigation from '../components/navigation';
 
 function Main() {
     return (
-        <main id="main" className=" lg:pr-52 min-w-80
+        <main id="main" className=" lg:pr-52 min-w-80 overflow-x-hidden max-w-full
                 bg-image-gradient-170deg from-purple-950 via-black via-80% to-slate-700">
             <Navigation />
             <div className="max-w-5xl m-auto">
