@@ -30,7 +30,7 @@ function Contact() {
     const inputPropiete = "w-full px-3 py-2 rounded-sm placeholder-gray-600 text-gray-950 bg-sky-100 text-sm focus:outline-none"
 
   return (
-    <div id='contact' className="flex items-center h-screen mt-24">  
+    <div id='contact' className="flex items-center mt-24 lg:pb-0 pb-12">  
         <div className="container mx-auto max-w-md mb-12">  
             <div className="text-center">
             <h2 className="my-6 text-5xl font-bold uppercase text-teal-100">
